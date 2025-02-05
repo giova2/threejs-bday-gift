@@ -33,7 +33,8 @@ export const agregarCubos = (scene, texture_loader) => {
     const boxHeight = 3;
     const boxDepth = 3;
     const cubos = [];  // just an array we can use to rotate the cubes
-    const origin = /^http:\/\/localhost:4000$/.test(window.location.origin) ? window.location.origin+'/assets/img/' : window.location.origin+'/assets/img/';
+    const origin = /^http:\/\/localhost:4000$/.test(window.location.origin) ? window.location.origin+'/assets/img/' : window.location.origin+'/threejs-bday-gift/assets/img/';
+    console.log({ origin })
     const definicionCubos = [
         {
             name: "principal",
