@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FELIZ CUMPLE!!</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css">
+</head>
+<body>
+    <button id="volver"> Back to menu </button>
+    <button id="clue"> Clue </button>
+    <button disabled id="detener-marquesina"> Stop Presentation </button>
+    <div id="overlay">
+        <div class="container-marquesina">
+            <p class="text-center" id="marquesina"></p>
+        </div>
+        <div id="click-to-play">
+            <div>
+                <button value="i">Interactive mode</button>
+                <button value="a">Automatic mode</button>
+            </div>
+        </div>
+        <div id="loading-indicator">
+            <label>Loading</label>
+            <progress max="100" value="0" id="progress"></progress>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div> 
+    
+
+    <script src="./resource/three.min.js"></script>
+    <!-- needed for loading GLTF files -->
+    <script src="./resource/GLTFLoader.js"></script>
+    <!-- needed for loading Truetype Fonts -->
+    <script src="./resource/TTFLoader.js"></script>
+    <script src="./resource/opentype.min.js"></script>
+    <script src="./OrbitControls.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
+    <script src="./resource/gsap.min.js"></script>
+    <script src="./resource/threex.domevents.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="./texto.js"></script>
+    <script type="module" src="./funciones.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
